@@ -14,3 +14,17 @@
 //     "Maxx": 15
 // }
 
+arr = [
+  ["John", 12],
+  ["Jack", 13],
+  ["Matt", 14],
+  ["Maxx", 15]
+];
+let obj = {};
+
+arr.forEach(el => {
+  let [key, value] = [...el];
+  obj[key] = value;
+});
+
+console.log(obj)

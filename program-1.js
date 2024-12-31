@@ -9,4 +9,18 @@
 // Output: false
 
 
+// obj1 = { name: "John", age: 23, degree: "CS" };
+// obj2 = { age: 23, degree: "CS" };
 
+obj1 = { name: "John", degree: "CS" };
+obj2 = { name: "Max", age: 23, degree: "CS" };
+
+
+function containsAllProprty(obj1, obj2) {
+  for (key in obj2) {
+    if (obj1[key] !== obj2[key]) return false;
+  }
+  return true;
+}
+
+console.log(containsAllProprty(obj1, obj2))
